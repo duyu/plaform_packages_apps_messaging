@@ -1,0 +1,20 @@
+apply plugin: 'android-library'
+//apply plugin: 'logtags'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.1"
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['java']
+//            logtags.srcDirs = ['java']
+        }
+    }
+
+    lintOptions {
+        // TODO: fix errors and reenable.
+        abortOnError false
+    }
+}
